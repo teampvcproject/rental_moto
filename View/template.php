@@ -11,7 +11,7 @@
 </head>
 <body>
     <?php
-        include "View/".$data['page'];
+        include_once "View/".$data['page'];
     ?>
 </body>
 </html>
