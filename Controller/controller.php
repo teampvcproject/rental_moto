@@ -12,8 +12,13 @@
      function add_form(&$data) {
         $data['page'] = "Pages/edit.php";
      }
+  
+    //lysa thorn
+
     function homePage(&$data){
+        $data['dashborad'] = mdashboard();
         $data['page'] = "Pages/homePage.php";
+        
     }
     function view(&$data){
         $data['view'] = get_data();

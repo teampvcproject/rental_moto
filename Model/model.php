@@ -50,3 +50,14 @@ function m_add_data($data) {
         return $result;
 }
 }
+
+function mdashboard(){
+    include 'connection.php';
+    $query = mysqli_query($connection, "SELECT * FROM moto");
+    $result = [];
+    foreach($query as $row){
+        $result[] = $row;
+    }
+    return $result;
+
+}
