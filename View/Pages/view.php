@@ -1,7 +1,7 @@
 <div class="container mt-5">
     <div class="row">
-        <div class="col-4"></div>
-        <div class="col-4">
+        <div class="col-sm-4"></div>
+        <div class="col-sm-4">
             <div class="card">
                 <div class="card-header" id="header_login">
                     <img src="View/img/user.png" id="user" class="img-fluid mx-auto d-block" alt="">
@@ -25,6 +25,6 @@
                 </div>
             </div>
         </div>
-        <div class="col-4"></div>
+        <div class="col-sm-4"></div>
     </div>
 </div>

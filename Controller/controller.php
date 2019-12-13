@@ -1,43 +1,25 @@
 <?php
-    // $data = array();
-    // flexible($data);
-    // function flexible(&$data){
-    //     $function = "view";
-    //     if (isset($_GET['action'])){
-    //         $function = $_GET['action'];
-    //     }
-    //     $function($data);
-    // }
-    // function view(&$data){
-    //     $data['page'] = "Pages/view.php";
-    // }
-    // function homePage(&$data){
-    //     $data['page'] = "Pages/homePage.php";
-    // }
-    $data = array();
-    flexible($data);
-    function flexible(&$data){
-        $function = "view";
-        if (isset($_GET['action'])){
-            $function = $_GET['action'];
-        }
-        $function($data);
+     $data = array();
+     get_action($data);
+     function get_action(&$data){
+         $function = 'view';
+         if (isset($_GET['action'])) {
+             $action = $_GET['action'];
+             $function = $action;
+         }
+         $function($data);
+     }
+     function add_form(&$data) {
+        $data['page'] = "Pages/edit.php";
+     }
+    function homePage(&$data){
+        $data['page'] = "Pages/homePage.php";
     }
     function view(&$data){
         $data['view'] = get_data();
-        $data['page'] = "Pages/rental_moto.php";
+        $data['page'] = "Pages/view.php";
     }
     //sokhorn.nhor
-    $data = array();
-    get_action($data);
-    function get_action(&$data){
-        $function = 'view';
-        if (isset($_GET['action'])) {
-            $action = $_GET['action'];
-            $function = $action;
-        }
-        $function($data);
-    }
     function register(&$data) {
         $data['page'] = "Pages/register-form.php";
     }    
