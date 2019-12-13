@@ -64,7 +64,7 @@
       <div class="row mt-5">
         <div class="col-1"></div>
         <div class="col-10">
-        <a href="" class="btn btn-primary">Add New Moto</a>
+        <a href="View/Pages/register-form.php" class="btn btn-primary">Add New Moto</a>
           <?php
           if (isset($data['dashborad'])) {
             foreach ($data['dashborad'] as $result) {
@@ -85,13 +85,10 @@
                     <td><?php echo $result['moto_name'] ?></td>
                     <td><?php echo $result['number_plate'] ?></td>
                     <td><?php echo $result['year_of_product'] ?></td>
-
                   </tr>
                 </tbody>
-
               </table>
           <?php
-
             }
           }
           ?>
