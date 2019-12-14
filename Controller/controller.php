@@ -24,6 +24,12 @@
         $data['view'] = get_data();
         $data['page'] = "Pages/view.php";
     }
+    function delete(&$data){
+        $delete = m_delete();
+        if ($delete){
+            header("location:index.php?action=homePage");
+        }
+    }
     //sokhorn.nhor
     function register(&$data) {
         $data['page'] = "Pages/register-form.php";
@@ -45,4 +51,5 @@
             header("Location:index.php?action=homePage");
         }
     }
+    
 ?>

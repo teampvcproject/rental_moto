@@ -61,3 +61,11 @@ function m_add_moto() {
     $query = mysqli_query($connection, $INSERT);
     return $query;
 }
+
+// lysa thorn
+function  m_delete(){
+    $id = $_GET['motoId'];
+    include "connection.php";
+    $delet = mysqli_query($connection, "DELETE * FROM moto WHERE motoId = $id");
+    return $delet;
+}

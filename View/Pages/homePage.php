@@ -26,7 +26,11 @@ include "View/Dashboard/dashboard.php";
             ?>
             <tbody>
               <tr>
-                <td><?php echo $result['motoId'] ?></td>
+                <td>
+                  <?php echo $result['motoId'] ?>
+                  <a href="index.php?action=delete" onclick="confirm('Are you sure want to delete?')"><i class="fas fa-trash float-right text-danger"></i></a>
+                  <a href=""><i class="fas fa-edit float-right text-success"></i></a>
+                </td>
                 <td><?php echo $result['moto_name'] ?></td>
                 <td><?php echo $result['number_plate'] ?></td>
                 <td><?php echo $result['year_of_product'] ?></td>
