@@ -43,5 +43,4 @@
         $('#example').DataTable();
     });
     // celandar
-    $( function() {
 </script>

@@ -22,6 +22,7 @@
                     <th>Moto's name</th>
                     <th>Number-plate</th>
                     <th>Year of product</th>
+                    <th>Action</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -30,6 +31,9 @@
                     <td><?php echo $result['moto_name'] ?></td>
                     <td><?php echo $result['number_plate'] ?></td>
                     <td><?php echo $result['year_of_product'] ?></td>
+                    <td class="center">
+                        <a class="btn btn-danger btn-sm" href="index.php?action=register&id=<?php echo $result['motoId'] ?>">Rental</a>
+                    </td>
                   </tr>
                 </tbody>
               </table>

@@ -1,5 +1,6 @@
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<?php
+    include "View/Dashboard/dashboard.php";
+?>
 <div class="container mt-5">
     <div class="row">
         <div class="col-3"></div>
