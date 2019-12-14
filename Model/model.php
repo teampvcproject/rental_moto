@@ -23,18 +23,6 @@ function get_data(){
     }
     return $rows;
 }
-    // function m_get_data() {
-    //     $query = "SELECT * FROM moto";
-    //     include "connection.php";
-    //     $result = mysqli_query($connection,$query);
-    //     $rows = [];
-    //     if($result && mysqli_num_rows($result) > 0 ){
-    //         foreach ($result as $record) {
-    //             $rows[] = $record;
-    //         }
-    //     }
-    //     return $rows;
-    // }
 function m_add_data($data) {
     if(isset($_POST['register'])){
 

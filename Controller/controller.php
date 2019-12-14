@@ -40,9 +40,9 @@
 
     //virak.ran
     function add_moto(&$data) {
-        $data['add_moto'] = m_add_moto($_POST);
-        if($data['add_moto']) {
-            header("Location:View/Pages/homePage.php");
+        $add = m_add_moto($_POST);
+        if($add) {
+            header("Location:index.php?action=homePage");
         }
     }
 ?>

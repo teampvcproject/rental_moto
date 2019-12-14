@@ -22,7 +22,7 @@
 
 <body>
     <?php
-    include_once "View/" . $data['page'];
+    include_once "View/". $data['page'];
 
     ?>
     <script src="View/assets/js/core/jquery.min.js"></script>
