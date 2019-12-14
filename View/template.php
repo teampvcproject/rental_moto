@@ -13,12 +13,17 @@
     <link rel="stylesheet" href="View/css/style.css">
     <!-- CSS Files -->
     <link href="View/assets/css/material-dashboard.css?v=2.1.1" rel="stylesheet" />
+    <!-- celandar -->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 
 </head>
 
 <body>
     <?php
     include_once "View/" . $data['page'];
+
     ?>
     <script src="View/assets/js/core/jquery.min.js"></script>
     <script src="View/assets/js/core/popper.min.js"></script>
@@ -28,15 +33,15 @@
     <script src="View/assets/js/material-dashboard.js?v=2.1.1" type="text/javascript"></script>
     <!--  DataTables.net Plugin, full documentation here: https://datatables.net/  -->
     <script src="View/assets/js/plugins/jquery.dataTables.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-    <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
-    <script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js"></script>
-    
+
 </body>
 
 </html>
 <script>
-$(document).ready(function() {
-    $('#example').DataTable();
-} );
+    //data table
+    $(document).ready(function() {
+        $('#example').DataTable();
+    });
+    // celandar
+    $( function() {
 </script>

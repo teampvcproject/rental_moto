@@ -10,7 +10,7 @@
          $function($data);
      }
      function add_form(&$data) {
-        $data['page'] = "Pages/edit.php";
+        $data['page'] = "Pages/add.php";
      }
   
     //lysa thorn
@@ -36,5 +36,13 @@
             $action = "register-form";
         }
         header("Location:index.php?action=$action");
+    }
+
+    //virak.ran
+    function add_moto(&$data) {
+        $data['add_moto'] = m_add_moto($_POST);
+        if($data['add_moto']) {
+            header("Location:View/Pages/homePage.php");
+        }
     }
 ?>

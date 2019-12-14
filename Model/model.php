@@ -59,5 +59,17 @@ function mdashboard(){
         $result[] = $row;
     }
     return $result;
+}
 
+//virak.ran
+// I add new moto 
+function m_add_moto() {
+    include 'connection.php';
+    $moto = $_POST['moto'];
+    $calendar = $_POST['calendar'];
+    $number_plate = $_POST['number_plate'];
+    $INSERT = "INSERT INTO moto(moto_name, number_plate, year_of_product)
+    VALUES('$moto', '$calendar', '$number_plate')";
+    $query = mysqli_query($connection, $INSERT);
+    return $query;
 }
