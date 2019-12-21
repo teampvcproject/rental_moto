@@ -14,7 +14,7 @@
           </a>
         </li>
         <li class="nav-item ">
-          <a class="nav-link" href="">
+          <a class="nav-link" href="rental_moto.php?action=rental_moto">
             <i class="material-icons">motorcycle</i>
             <p>Rental Moto</p>
           </a>
@@ -49,7 +49,7 @@
                 <a class="dropdown-item" href="#">Profile</a>
                 <a class="dropdown-item" href="#">Settings</a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Log out</a>
+                <a class="dropdown-item" href="index.php?action=view">Log out</a>
               </div>
             </li>
           </ul>
