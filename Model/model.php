@@ -70,7 +70,7 @@ function  m_delete(){
     return $delet;
 }
 
-//////
+//////sokhorn
 
 function m_add_register($data){
     include "connection.php";

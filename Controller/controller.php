@@ -33,10 +33,10 @@
         }
     }
   
-    //////////////////////////
+////sokhorn
     function register_form(&$data) {
         $data['data'] = m_add_data_register($_POST);
-        header("Location:rental_moto.php?action=rental_moto.php");
+        header("Location:rental_moto.php?action=moto_rental");
     }
 
     function  register(&$data) {
