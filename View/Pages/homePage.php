@@ -3,13 +3,13 @@ include "View/Dashboard/dashboard.php";
 ?>
 <!-- Lysa Thorn -->
 <div class="container mt-5">
-
-  <div class="row mt-5">
+  <h1 class="text-center">List of Moto</h1>
+  <div class="row mt-3">
     <div class="col-1"></div>
     <div class="col-10">
-      <a href="index.php?action=add_form" class="btn btn-primary">Add New Moto</a>
+      <a href="index.php?action=add_form" class="btn btn-primary mb-3">Add New Moto</a>
 
-      <table id="example" class="table table-striped table-bordered" style="width:100%">
+      <table id="example" class="table table-striped table-bordered">
         <thead>
           <tr>
             <th>ID</th>
@@ -28,8 +28,8 @@ include "View/Dashboard/dashboard.php";
               <tr>
                 <td>
                   <?php echo $result['motoId'] ?>
-                  <a href="index.php?action=delete" onclick="confirm('Are you sure want to delete?')"><i class="fas fa-trash float-right text-danger"></i></a>
-                  <a href=""><i class="fas fa-edit float-right text-success"></i></a>
+                  <a href="index.php?action=delete&id=<?php echo $result['motoId'] ?>" onclick="return confirm('Are you sure want to delete?')"><i class="fas fa-trash float-right text-danger"></i></a>
+                  <a href=""><i class="fas fa-edit float-right text-primary"></i></a>
                 </td>
                 <td><?php echo $result['moto_name'] ?></td>
                 <td><?php echo $result['number_plate'] ?></td>

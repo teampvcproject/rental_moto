@@ -12,13 +12,13 @@
                             <div class="input-group-prepend">
                                 <span class="material-icons input-group-text">person</span>
                             </div>
-                            <input type="text" class="form-control" placeholder="Username">
+                            <input type="text" name="user" class="form-control" placeholder="Username">
                         </div>
                         <div class="input-group mt-3">
                             <div class="input-group-prepend">
                                 <span class="material-icons input-group-text">https</span>
                             </div>
-                            <input type="text" class="form-control" placeholder="Password">
+                            <input type="text"  cname="pass" class="form-control" placeholder="Password">
                         </div>
                         <input type="submit" class="btn btn-primary btn-block mt-3" value="LOGIN">
                     </form>

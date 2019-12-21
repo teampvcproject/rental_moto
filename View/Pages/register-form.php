@@ -69,7 +69,7 @@
                             <input type="text" class="form-control" aria-label="Recipient's username" aria-describedby="basic-addon2">
                         </div>
                         <button class="btn btn-danger"  type="reset">Cancel  </button>
-                        <button class="btn btn-primary float-right" name="register" type="reset">Register  </button>
+                        <input class="btn btn-primary float-right" name="register" type="submit">
                          </div>
                 </div>
             </form>

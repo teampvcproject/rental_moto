@@ -16,8 +16,10 @@
     //lysa thorn
 
     function homePage(&$data){
+      
         $data['dashborad'] = mdashboard();
         $data['page'] = "Pages/homePage.php";
+       
         
     }
     function view(&$data){
@@ -30,6 +32,7 @@
             header("location:index.php?action=homePage");
         }
     }
+  
     //sokhorn.nhor
     function register(&$data) {
         $data['page'] = "Pages/register-form.php";
@@ -37,11 +40,11 @@
     function form_data(&$data) {
         $add_data = m_add_data($_POST);
         if($add_data) {
-            $action = "view";
+            $action = "moto_rental";
         }else {
             $action = "register-form";
         }
-        header("Location:index.php?action=$action");
+        header("Location:rental_moto.php?action=$action");
     }
 
     //virak.ran
