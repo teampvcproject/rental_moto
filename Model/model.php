@@ -64,8 +64,36 @@ function m_add_moto() {
 
 // lysa thorn
 function  m_delete(){
-    $id = $_GET['motoId'];
+    $id = $_GET['id'];
     include "connection.php";
-    $delet = mysqli_query($connection, "DELETE * FROM moto WHERE motoId = $id");
+    $delet = mysqli_query($connection, "DELETE FROM moto WHERE motoId = $id");
     return $delet;
+}
+
+//////
+
+function m_add_register($data){
+    include "connection.php";
+    $id = $_GET['id'];
+    $query = mysqli_query($connection, "SELECT * FROM moto WHERE motoId = $id");
+    $result = [];
+    foreach ($query as $row) {
+        $result[] = $row;
+    }
+    return $result;
+}
+
+function m_add_data_register(){
+    $id = $_POST['id'];
+   include "connection.php";
+   $p_name = $_POST['p_name'];
+   $phone = $_POST['phone'];
+   $id_card = $_POST['id_card'];
+   $start_date = $_POST['start'];
+   $end_date = $_POST['end'];
+   $INSERT = "INSERT INTO users(username, id_card, phonenumber, start_date, end_date,motoId)
+   VALUES ('$p_name', '$id_card', '$phone', '$start_date', '$end_date',
+   (SELECT motoId FROM moto WHERE  motoId= $id))";
+   $result = mysqli_query($connection, $INSERT);
+   return $result;
 }
