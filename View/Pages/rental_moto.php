@@ -1,50 +1,55 @@
 <?php
 include "View/Dashboard/dashboard.php";
 ?>
-    <div class="row mt-5 table">
-        <div class="col-12 table-responsive">
-            <table id="example" class="table table-striped table-bordered" style="width:100%">
+ <div class="container mt-5">
+         <h1 class="text-primary text-center">List of Rental Moto</h1>      
+        <div class="row">
+            <div class="col-12">
+            <table id="example" class="table table-responsive table-bordered text-center" style="width:100%">
                 <thead>
                     <tr>
-                        <th>ID</th>
-                        <th>Moto name</th>
-                        <th>Number_plate</th>
-                        <th>Year of product</th>
-                        <th>Person's name</th>
+                        <th>UserId</th>
+                        <th>MotoName</th>
+                        <th>NumberPlate</th>
+                        <th>YearOfProduct</th>
+                        <th>Username</th>
+                        <th>IDCard</th>
                         <th>Phone</th>
-                        <th>ID Card</th>
                         <th>StartDate</th>
                         <th>EndDate</th>
                         <th>Action</th>
                     </tr>
                 </thead>
-                <tbody>
                 <?php
-                if(isset($data['m_rental'])) {
-                    foreach ($data['m_rental'] as $value) {
-                        
-               
+                if (isset($data['t_info'])) {
+                    $id=1;
+                    foreach ($data['t_info'] as $result) {
+                        ?>
+                        <tbody>
+                            <tr>
+                            <td> <?php echo $id  ?> </td>
+                                <td> <?php echo $result['moto_name'];  ?> </td>
+                                <td> <?php echo $result['number_plate'];  ?> </td>
+                                <td> <?php echo $result['year_of_product'];  ?> </td>
+                                <td> <?php echo $result['username'];  ?> </td>
+                                <td> <?php echo $result['id_card'];  ?> </td>
+                                <td> <?php echo $result['phonenumber'];  ?> </td>
+                                <td> <?php echo $result['start_date'];  ?> </td>
+                                <td> <?php echo $result['end_date'];  ?> </td>
+                                <td>
+                                    <a href=""> <i class="fas fa-edit"></i></a>
+                                    <a href="rental_moto.php?action=deleteUser&id=<?php  echo $result['userId']; ?>" onclick="return confirm('Are you sure want to delete this customer?')"> <i class="fas fa-trash text-danger"></i></a>
+                                </td>
+                            </tr>
+                        </tbody>
+                <?php
+                $id++;
+                    }
+                }
                 ?>
-                    <tr>
-                        <td><?php echo $value['userId']; ?></td>
-                        <td><?php echo $value['moto_name']; ?></td>
-                        <td><?php echo $value['year_of_product']; ?></td>
-                        <td><?php echo $value['number_plate']; ?></td>
-                        <td><?php echo $value['username']; ?></td>
-                        <td><?php echo $value['phonenumber']; ?></td>
-                        <td><?php echo $value['id_card']; ?></td>
-                        <td><?php echo $value['start_date']; ?></td>
-                        <td><?php echo $value['end_date']; ?></td>
-                        <td><?php echo $value['username']; ?></td>
-                    </tr>
-                <?php
-                         }
-                        }
-                ?>
-                </tbody>
-                <?php
 
-                ?>
             </table>
+            </div>
         </div>
     </div>
+   

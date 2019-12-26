@@ -1,5 +1,7 @@
 <?php
     include "View/Dashboard/dashboard.php";
+    $id = $_GET['id'];
+    include "connection.php";
 ?>
 <div class="container mt-5">
     <div class="row">
@@ -78,7 +80,7 @@
                             <input type="date" name="end" class="form-control" aria-label="Recipient's username" aria-describedby="basic-addon2">
                         </div>
                         <button class="btn btn-danger">Cancel  </button>
-                        <input class="btn btn-primary float-right" type="submit" value="register">
+                        <input class="btn btn-primary float-right" id="register" type="submit" value="register">
                          </div>
                 </div>
             </form>
