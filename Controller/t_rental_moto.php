@@ -18,7 +18,7 @@
   
     function moto_rental(&$data){
         $data['t_info'] = m_get_data();
-        $data['page'] = "Pages/rental_moto.php";  
+        $data['page'] = "Rental_moto/rental_moto.php";  
     }
   ///Delete function
 
@@ -31,4 +31,10 @@
     }
     header("Location:rental_moto.php?action=$action");
 }
+
+    // Edit function
+    function edit_moto_rental(&$data){
+        $data['page'] = "Rental_moto/edit_rental_moto.php";  
+        $data['eidit_rental_moto'] = m_edit_rental_moto($_GET);
+    }
 ?>

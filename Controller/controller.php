@@ -10,14 +10,14 @@
             $function($data);
         }
         function add_form(&$data) {
-            $data['page'] = "Pages/add.php";
+            $data['page'] = "Moto_dashoard/add.php";
         }
         
         //lysa thorn
         
     function homePage(&$data){
             $data['dashborad'] = mdashboard();
-            $data['page'] = "Pages/homePage.php";
+            $data['page'] = "Moto_dashoard/homePage.php";
     }
         function go_homePage(&$data) {
             session_start();
@@ -25,15 +25,15 @@
             foreach ($data['author'] as $key => $value) {
                 if($value['passwords'] == $_SESSION['pass'] && $value['name'] = $_SESSION['name']) {
                     $data['dashborad'] = mdashboard();
-                    $data['page'] = "Pages/homePage.php";
+                    $data['page'] = "Moto_dashoard/homePage.php";
             }else {
-                $data['page'] = "Pages/login.php";
+                $data['page'] = "Moto_dashoard/login.php";
             }
         }
     }
     function login(&$data){
         $data['view'] = get_data();
-        $data['page'] = "Pages/login.php";
+        $data['page'] = "Moto_dashoard/login.php";
     }
 
     function delete(&$data){
@@ -51,7 +51,7 @@
 
     function  register(&$data) {
         $data['data'] = m_add_register($_GET);
-        $data['page'] = "Pages/register_form.php";
+        $data['page'] = "Moto_dashoard/register_form.php";
     }
 
     //virak.ran
@@ -64,7 +64,7 @@
 
     function edit(&$data) {
         $data['edit_page'] = m_edit_data($_GET);
-        $data['page'] = "Pages/edit.php";
+        $data['page'] = "Moto_dashoard/edit.php";
     }
 
     function edit_moto(&$data) {

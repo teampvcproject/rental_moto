@@ -37,7 +37,7 @@ include "View/Dashboard/dashboard.php";
                                 <td> <?php echo $result['start_date'];  ?> </td>
                                 <td> <?php echo $result['end_date'];  ?> </td>
                                 <td>
-                                    <a href=""> <i class="fas fa-edit"></i></a>
+                                    <a href="rental_moto.php?action=edit_moto_rental&id=<?php  echo $result['userId']; ?>"> <i class="fas fa-edit"></i></a>
                                     <a href="rental_moto.php?action=deleteUser&id=<?php  echo $result['userId']; ?>" onclick="return confirm('Are you sure want to delete this customer?')"> <i class="fas fa-trash text-danger"></i></a>
                                 </td>
                             </tr>
