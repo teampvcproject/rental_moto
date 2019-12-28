@@ -7,7 +7,7 @@ include "connection.php";
     <div class="row">
         <div class="col-3"></div>
         <div class="col-6">
-            <form action="index.php?action=register_form" method="POST">
+            <form action="index.php?action=edit_rental_information" method="POST">
                 <div class="card">
                     <div class="card-header">
                         <h3 class="text-center">Edit Information</h3>
