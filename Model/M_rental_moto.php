@@ -26,7 +26,7 @@
     function m_edit_rental_moto(){
         include "connection.php";
         $id = $_GET['id'];
-        $query = "SELECT* FROM users us INNER JOIN moto mo ON us.motoId = mo.motoId WHERE $id";
+        $query = "SELECT* FROM users us INNER JOIN moto mo ON us.motoId = mo.motoId WHERE us.userId = $id";
         $result = mysqli_query($connection,$query);
         $rows = [];
         if($result && mysqli_num_rows($result) > 0){
