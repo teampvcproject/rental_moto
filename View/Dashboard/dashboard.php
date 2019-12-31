@@ -24,7 +24,15 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
             <li class="nav-item active">
-              <a class="nav-link text-light" href="index.php?action=login">Logout <span class="sr-only">(current)</span></a>
+            <div class="dropdown show " style="margin-right: 35px">
+                <a class="dropdown-toggle text-light" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <i class="material-icons " >person</i>
+                </a>
+
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <a class="dropdown-item" href="index.php?action=login">Loggout</a>
+                </div>
+              </div>
             </li>
           </ul>
         </div>
