@@ -33,7 +33,7 @@
     }
     function login(&$data){
         $data['view'] = get_data();
-        $data['page'] = "Moto_dashoard/login.php";
+        $data['page'] = "author/login.php";
     }
 
     function delete(&$data){
@@ -77,4 +77,9 @@
         header("Location:index.php?action=$action");
     }
     
+    function cencal(&$data){
+        $data['dashborad'] = mdashboard();
+        header("Location:index.php?action=homePage");
+    }
+
 ?>
