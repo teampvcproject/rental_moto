@@ -79,7 +79,7 @@
                             </div>
                             <input type="date" name="end" class="form-control" aria-label="Recipient's username" aria-describedby="basic-addon2">
                         </div>
-                        <button class="btn btn-danger">Cancel  </button>
+                        <a href="index.php?action=cencal" class="btn btn-danger">Cancel  </a>
                         <input class="btn btn-primary float-right" id="register" type="submit" value="register">
                          </div>
                 </div>
