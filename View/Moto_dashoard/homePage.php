@@ -32,14 +32,14 @@ include "View/Dashboard/dashboard.php";
               <tr id="tr">
                 <td>
                   <?php echo $id ?>
-                  <a href="index.php?action=delete&id=<?php echo $result['motoId'] ?>" onclick="confirm('Are you sure want to delete?')"><i class="fas fa-trash float-right text-danger"></i></a>
+                  <a href="index.php?action=delete&id=<?php echo $result['motoId'] ?>"  onclick=" return confirm('Are you sure want to delete?')"><i class="fas fa-trash float-right text-danger"></i></a>
                   <a id="test" href="index.php?action=edit&id=<?php echo $result['motoId'] ?>"><i class="fas fa-edit float-right text-success"></i></a>
                 </td>
                 <td><?php echo $result['moto_name'] ?></td>
                 <td><?php echo $result['number_plate'] ?></td>
                 <td><?php echo $result['year_of_product'] ?></td>
                 <td class="center">
-                  <a id="virak" class="btn btn-danger btn-sm" href="index.php?action=register&id=<?php echo $result['motoId']?>">Rental</a>
+                  <a id="" class="btn btn-danger btn-sm" href="index.php?action=register&id=<?php echo $result['motoId']?>">Rental</a>
                 </td>
               </tr>
             </tbody>
