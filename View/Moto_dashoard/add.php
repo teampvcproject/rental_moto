@@ -24,7 +24,7 @@ include "View/Dashboard/dashboard.php";
                             <div class="input-group-append">
                                 <span class="input-group-text" id="basic-addon2"> <i class="material-icons">calendar_today</i></span>
                             </div>
-                            <input type="text" name="calendar" id="datepicker" class="form-control calendar" aria-label="Recipient's calendar_today" aria-describedby="basic-addon2">
+                            <input type="text" name="yearOfPruduct" id="datepicker" class="form-control calendar" aria-label="Recipient's calendar_today" aria-describedby="basic-addon2">
                         </div>
                         <div class="input-group mb-3">
                             <label for="moto" class="text-dark"> Number-plate &nbsp;</label>

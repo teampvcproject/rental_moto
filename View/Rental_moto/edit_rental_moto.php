@@ -7,7 +7,7 @@ include "connection.php";
     <div class="row">
         <div class="col-3"></div>
         <div class="col-6">
-            <form action="index.php?action=edit_rental_information" method="POST">
+            <form action="rental_moto.php?action=edit_info" method="POST">
                 <div class="card">
                     <div class="card-header">
                         <h3 class="text-center">Edit Information</h3>
@@ -22,7 +22,7 @@ include "connection.php";
                                     <div class="input-group-append ml-4">
                                         <span class="input-group-text" id="basic-addon2"> <i class="material-icons"> motorcycle</i></span>
                                     </div>
-                                    <input type="hidden" name="id" value="<?php echo $value['motoId']; ?>">
+                                    <input type="hidden" name="userID" value="<?php echo $value['userId']; ?>">
                                     <input type="text" value="<?php echo $value['moto_name']; ?>" class="form-control" disabled aria-label="Recipient's username" aria-describedby="basic-addon2">
                                 </div>
 
@@ -76,8 +76,8 @@ include "connection.php";
                                     </div>
                                     <input type="date" name="end" value="<?php echo $value['end_date']; ?>" class="form-control" aria-label="Recipient's username" aria-describedby="basic-addon2">
                                 </div>
-                                <button class="btn btn-danger">Cancel </button>
-                                <input class="btn btn-primary float-right" id="register" type="submit" value="Save">
+                                <a class="btn btn-danger">Cancel </a>
+                                <input class="btn btn-primary float-right"  type="submit" value="Save">
                     </div>
                 </div>
 

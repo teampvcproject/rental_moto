@@ -67,10 +67,10 @@ function mdashboard(){
 function m_add_moto() {
     include 'connection.php';
     $moto = $_POST['moto'];
-    $calendar = $_POST['calendar'];
+    $yearOfPruduct = $_POST['yearOfPruduct'];
     $number_plate = $_POST['number_plate'];
     $INSERT = "INSERT INTO moto(moto_name, number_plate, year_of_product)
-    VALUES('$moto', '$calendar', '$number_plate')";
+    VALUES('$moto', '$number_plate', '$yearOfPruduct')";
     $query = mysqli_query($connection, $INSERT);
     return $query;
 }

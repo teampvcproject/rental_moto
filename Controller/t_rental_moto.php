@@ -37,4 +37,13 @@
         $data['page'] = "Rental_moto/edit_rental_moto.php";  
         $data['eidit_rental_moto'] = m_edit_rental_moto($_GET);
     }
+    
+    function edit_info(&$data){
+        $result = edit_rental_moto($_POST);
+        if($result){
+            $data['t_info'] = m_get_data();
+            $data['page'] = "Rental_moto/rental_moto.php";  
+        }
+    }
+    
 ?>
