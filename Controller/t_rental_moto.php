@@ -41,9 +41,9 @@
     function edit_info(&$data){
         $result = edit_rental_moto($_POST);
         if($result){
-            $data['t_info'] = m_get_data();
-            $data['page'] = "Rental_moto/rental_moto.php";  
+            header("Location:rental_moto.php?action=moto_rental");
         }
     }
-    
-?>
+    function rental_cencel(&$data){
+        header("Location:rental_moto.php?action=moto_rental");
+    }
