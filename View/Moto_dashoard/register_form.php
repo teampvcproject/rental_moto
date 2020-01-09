@@ -49,35 +49,35 @@
                             <div class="input-group-append ml-2">
                                 <span class="input-group-text" id="basic-addon2"><i class="material-icons">person</i></span>
                             </div>
-                            <input type="text" name="p_name" class="form-control" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                            <input type="text" name="p_name" class="form-control" aria-label="Recipient's username" aria-describedby="basic-addon2" required>
                         </div>
                         <div class="input-group mb-3">
                             <label for="moto" class="text-dark"> Phone &nbsp;  &nbsp; &nbsp; </label>
                             <div class="input-group-append ml-5">
                                 <span class="input-group-text" id="basic-addon2"> <i class="material-icons">phone</i></span>
                             </div>
-                            <input type="text" name="phone" class="form-control" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                            <input type="text" name="phone" class="form-control" aria-label="Recipient's username" aria-describedby="basic-addon2" required>
                         </div>
                         <div class="input-group mb-3">
                             <label for="moto" class="text-dark"> ID Card  &nbsp; &nbsp;</label>
                             <div class="input-group-append ml-5">
                                 <span class="input-group-text" id="basic-addon2"> <i class="material-icons">picture_in_picture</i></span>
                             </div>
-                            <input type="text" name="id_card" class="form-control" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                            <input type="text" name="id_card" class="form-control" aria-label="Recipient's username" aria-describedby="basic-addon2" required>
                         </div>
                         <div class="input-group mb-3">
                             <label for="moto" class="text-dark"> Start Date &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</label>
                             <div class="input-group-append ml-1">
                                 <span class="input-group-text" id="basic-addon2"><i class="material-icons">calendar_today</i></span>
                             </div>
-                            <input type="date" name="start" class="form-control" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                            <input type="date" name="start" class="form-control" aria-label="Recipient's username" aria-describedby="basic-addon2" required>
                         </div>
                         <div class="input-group mb-3">
                             <label for="moto" class="text-dark"> End Date &nbsp; &nbsp; &nbsp; &nbsp; </label>
                             <div class="input-group-append ml-3">
                                 <span class="input-group-text" id="basic-addon2"><i class="material-icons">calendar_today</i></span>
                             </div>
-                            <input type="date" name="end" class="form-control" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                            <input type="date" name="end" class="form-control" aria-label="Recipient's username" aria-describedby="basic-addon2" required>
                         </div>
                         <a href="index.php?action=cancel" class="btn btn-danger">Cancel  </a>
                         <input class="btn btn-primary float-right" id="register" type="submit" value="register">

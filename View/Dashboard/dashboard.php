@@ -4,7 +4,7 @@
     <div class=" border-right" id="sidebar-wrapper">
       <img src="View/img/logo.png" id="logo" alt="">
       <div class="list-group list-group-flush">
-        <a href="index.php?action=homePage" class="list-group-item text-light list-group-item-action" id="dashboard">Dashboard</a>
+        <a href="index.php?action=homePage" class="right list-group-item text-light list-group-item-action" id="dashboard">Dashboard</a>
         <a href="rental_moto.php?action=moto_rental" class="list-group-item text-light list-group-item-action" id="rental">Rental Moto</a>
         
       </div>

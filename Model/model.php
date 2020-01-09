@@ -2,16 +2,7 @@
 function get_data(){
     include_once "connection.php";
     $query = "SELECT
-     moto.motoId,
-     moto.moto_name,
-     moto.number_plate,
-     moto.year_of_product,
-     users.userId ,
-     users.username,
-     users.id_card,
-     users.phonenumber,
-     users.start_date,
-     users.end_date
+        * 
      FROM moto FULL OUTER JOIN users on moto.motoId=users.userId"; 
     $result = mysqli_query( $connection ,$query);
     $rows = [];
@@ -21,21 +12,6 @@ function get_data(){
         }
     }
     return $rows;
-}
-function m_add_data($data) {
-    if(isset($_POST['register'])){
-        
-        include "connection.php";
-        $userId = $_POST['userId'];
-        $moto_name = $_POST['moto_name'];
-        $number_plate = $_POST['number_plate'];
-        $year_of_product = $_POST['year_of_product'];
-        
-        $query = "INSERT INTO moto (userId,moto_name,number_plate,year_of_product)
-              VALUES('$userId', '$moto_name', '$number_plate', '$year_of_product')";
-        $result = mysqli_query($connection, $query);
-        return $result;
-    }
 }
 
 function getAuthors() {
@@ -62,8 +38,6 @@ function mdashboard(){
     return $result;
 }
 
-//virak.ran
-// I add new moto 
 function m_add_moto() {
     include 'connection.php';
     $moto = $_POST['moto'];
@@ -98,7 +72,6 @@ function data_edit($data){
     }
 
 
-// lysa thorn
 function  m_delete(){
     $id = $_GET['id'];
     include "connection.php";
@@ -106,7 +79,6 @@ function  m_delete(){
     return $delet;
 }
 
-//////sokhorn
 
 function m_add_register($data){
     include "connection.php";
@@ -131,6 +103,7 @@ function m_add_data_register(){
    VALUES ('$p_name', '$id_card', '$phone', '$start_date', '$end_date',
    (SELECT motoId FROM moto WHERE  motoId= $id))";
    $result = mysqli_query($connection, $INSERT);
+    var_dump($result);
    return $result;
 }
 ?>

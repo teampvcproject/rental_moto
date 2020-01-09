@@ -48,11 +48,14 @@ function delete(&$data)
     }
 }
 
-////sokhorn
 function register_form(&$data)
 {
-    $data['data'] = m_add_data_register($_POST);
-    header("Location:rental_moto.php?action=moto_rental");
+    $result = m_add_data_register($_POST);
+    if($result){
+        header("Location:rental_moto.php?action=moto_rental");
+    }else{
+        header("Location:rental_moto.php?action=register_form");
+    }
 }
 
 function  register(&$data)
@@ -61,7 +64,6 @@ function  register(&$data)
     $data['page'] = "Moto_dashoard/register_form.php";
 }
 
-//virak.ran
 function add_moto(&$data)
 {
     $add = m_add_moto($_POST);

@@ -1,17 +1,14 @@
 <?php
 include "View/Dashboard/dashboard.php";
 ?>
-<!-- Lysa Thorn -->
-<script>
- src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
-</script>
 <div class="container mt-5">
 
   <div class="row mt-5">
     <div class="col-1"></div>
     <div class="col-10">
       <a href="index.php?action=add_form" class="btn btn-primary">Add New Moto</a>
-
+  <br>
+  <br>
       <table id="example" class="table table-striped table-bordered" style="width:100%">
         <thead>
           <tr>
@@ -39,7 +36,7 @@ include "View/Dashboard/dashboard.php";
                 <td><?php echo $result['number_plate'] ?></td>
                 <td><?php echo $result['year_of_product'] ?></td>
                 <td class="center">
-                  <a id="" class="btn btn-danger btn-sm" href="index.php?action=register&id=<?php echo $result['motoId']?>">Rental</a>
+                  <a id="rantal" class="btn btn-danger btn-sm" href="index.php?action=register&id=<?php echo $result['motoId']?>">Rental</a>
                 </td>
               </tr>
             </tbody>
