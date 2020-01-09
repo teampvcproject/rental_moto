@@ -76,7 +76,7 @@ include "connection.php";
                                     </div>
                                     <input type="date" name="end" value="<?php echo $value['end_date']; ?>" class="form-control" aria-label="Recipient's username" aria-describedby="basic-addon2">
                                 </div>
-                                <a class="btn btn-danger">Cancel </a>
+                                <a href="rental_moto.php?action=rental_cencel" class="btn btn-danger">Cancel </a>
                                 <input class="btn btn-primary float-right"  type="submit" value="Save">
                     </div>
                 </div>
